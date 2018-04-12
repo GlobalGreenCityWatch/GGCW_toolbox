@@ -6,10 +6,14 @@ Global Green City Watch aimed at using Very High Resolution Imagery for the asse
 Tools that were developed were used on jupyter notebooks on the GBDX platform but can also be executed on regular Python installations
 when the GBDX API is installed.
 
+## Website
+For actual information on the status of the project please visit [Our Website](http://globalgreencitywatch.org)
 
+## Folder Structure
 
+### Functions
+This folder contains the functions used within the main script.
 
-## Functions
 **classification_tools.py**   -   This function queries the gbdx.vector service for OSM objects within each selected park. It returns a 
                               dataframe with the available amenities within the park.
 
@@ -29,7 +33,13 @@ when the GBDX API is installed.
 
 **Watertools.py**             -    This function is a group of functions used to identify and deliniate water objects within parks and find the 
                                riparian zone around these water bodies.
-                               
-## Wkt_files
+
+### Pickle
+This folder contains the pickled classifiers trained for each study area.
+
+### Scripts
+This folder contains the main script that was used for the calculation
+
+### Wkt_files
 This folder contains the wkt files containing the outline of the city borders for Tokyo, Rio de Janeiro, Amsterdam and Houston
 
